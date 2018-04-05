@@ -6,12 +6,14 @@ interface Props {
 }
 
 interface StateProps {
-  player: string
+  player?: string
 }
 
-@connect<StateProps, {}, Props>(state => ({
-  player: state.player
-}))
+@connect<StateProps, {}, Props>(
+  state => ({
+    player: state.player
+  })
+)
 export class Hello extends React.Component<StateProps & Props, {}> {
   render() {
     const { player } = this.props
