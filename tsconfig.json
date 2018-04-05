@@ -1,0 +1,45 @@
+{
+  "version": "2.8.1",
+
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "react",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false,
+    "declaration": false,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "removeComments": false,
+
+    "strictNullChecks": true,
+    "noImplicitUseStrict": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": false,
+
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "checkJs": false,
+
+    "baseUrl": ".",
+
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
